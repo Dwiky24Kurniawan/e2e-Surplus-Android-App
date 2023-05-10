@@ -3,17 +3,7 @@ describe('Test Sample Login Register APK', () => {
         const greeting_text = await $('//android.widget.TextView[@content-desc="GreetingText"]')
         expect(greeting_text).toExist()
         expect(greeting_text).toBeDisplayed()
-
-        // const your_location = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]')
-        // expect(your_location).toExist()
-        // expect(your_location).toBeDisplayed()
-        // await (your_location).click()
     })
-
-    // it('User click kantor', async() => {
-    //     const kantor = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup')
-    //     await (kantor).click()
-    // })
 
     it('User click Roti & Kue', async() => {
         const roti_kue = await $('(//android.view.ViewGroup[@content-desc="CategoryButton"])[3]/android.widget.ImageView')
